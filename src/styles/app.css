@@ -1,0 +1,83 @@
+
+/* app.css */
+
+/* Future spec variables */
+
+:root {
+  --primary: #dd0000;
+  --secondary: blue;
+  --baseFontSize: 16px;
+}
+
+@custom-media --small-min (min-width: 30rem);
+@custom-media --medium-min (min-width: 60rem);
+@custom-media --large-min (min-width: 90rem);
+
+@media (--small-min) {
+  .small-min {
+    content: 'Small-min, yay!';
+  }
+}
+
+@media (--medium-min) {
+  .medium-min {
+    content: 'Medium-min, yay!';
+  }
+}
+
+@media (--large-min) {
+  .large-min {
+    content: 'Large-min, yay!';
+  }
+}
+
+/* Sass-style variables */
+
+$red: #f00;
+$green: #0f0;
+$blue: #00f;
+
+/* Colors */
+/* Testing loops */
+
+.red-sass {
+  color: $red;
+}
+
+.primary-spec {
+  color: var(--primary);
+}
+
+@each $color in (red, green, blue) {
+  .$color {
+    color: $color;
+  }
+}
+
+/* Filters */
+
+.blur {
+  filter: blur(4px);
+}
+
+/* Type */
+
+.heading-large {
+  font-size: calc(var(--baseFontSize) * 2);
+}
+
+/* Opactiy utility classes */
+/* Testing loops */
+
+@for $i from 5 to 95 by 5 {
+  .o$i {
+    opacity: $i%;
+  }
+}
+
+/* Transforms */
+/* Testing autoprefixer */
+
+.translate-0-0-0 {
+  transform: translate(0, 0, 0);
+}

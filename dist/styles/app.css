@@ -1,0 +1,149 @@
+
+/* app.css */
+
+/* Future spec variables */
+
+@media (min-width: 30rem) {
+  .small-min {
+    content: 'Small-min, yay!';
+  }
+}
+
+@media (min-width: 60rem) {
+  .medium-min {
+    content: 'Medium-min, yay!';
+  }
+}
+
+@media (min-width: 90rem) {
+  .large-min {
+    content: 'Large-min, yay!';
+  }
+}
+
+/* Sass-style variables */
+
+/* Colors */
+/* Testing loops */
+
+.red-sass {
+  color: #f00;
+}
+
+.primary-spec {
+  color: #dd0000;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+/* Filters */
+
+.blur {
+  -webkit-filter: blur(4px);
+          filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
+          -webkit-filter: blur(4px);
+                  filter: blur(4px);
+}
+
+/* Type */
+
+.heading-large {
+  font-size: 32px;
+}
+
+/* Opactiy utility classes */
+/* Testing loops */
+
+.o5 {
+  opacity: 5%;
+}
+
+.o10 {
+  opacity: 10%;
+}
+
+.o15 {
+  opacity: 15%;
+}
+
+.o20 {
+  opacity: 20%;
+}
+
+.o25 {
+  opacity: 25%;
+}
+
+.o30 {
+  opacity: 30%;
+}
+
+.o35 {
+  opacity: 35%;
+}
+
+.o40 {
+  opacity: 40%;
+}
+
+.o45 {
+  opacity: 45%;
+}
+
+.o50 {
+  opacity: 50%;
+}
+
+.o55 {
+  opacity: 55%;
+}
+
+.o60 {
+  opacity: 60%;
+}
+
+.o65 {
+  opacity: 65%;
+}
+
+.o70 {
+  opacity: 70%;
+}
+
+.o75 {
+  opacity: 75%;
+}
+
+.o80 {
+  opacity: 80%;
+}
+
+.o85 {
+  opacity: 85%;
+}
+
+.o90 {
+  opacity: 90%;
+}
+
+.o95 {
+  opacity: 95%;
+}
+
+/* Transforms */
+/* Testing autoprefixer */
+
+.translate-0-0-0 {
+  -webkit-transform: translate(0, 0, 0);
+          transform: translate(0, 0, 0);
+}
